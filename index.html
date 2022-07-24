@@ -8,13 +8,49 @@
 	<head>
 	  <meta charset="utf-8">
 	  <title>Odin recipe exercise</title>
+	  <style>
+	    * {
+	      box-sizing: border-box;
+	      margin: 0;
+	    }
+
+	    header {
+	      padding: 50px;
+	      text-align: center;
+	    }
+
+	    main {
+	      display: grid;
+	      grid-template-columns: auto auto auto;
+	    }
+
+	    footer {
+	      text-align: center;
+	      padding: 25px;
+	    }
+	  </style>
 	</head>
 	<body>
-	  <h1> Odin recipes: </h1>
-	  <img src="https://images.pexels.com/photos/1435904/pexels-photo-1435904.jpeg?cs=srgb&dl=pexels-engin-akyurt-1435904.jpg&fm=jpg" style="height:25%;width:45%;">
-	  <ul>
-	    <li><a href="./recipes/spaghetti_e_olio.html">Spaghetti e olio (Spaghetti with garlic)</a></li>
-	    <li><a href="./recipes/tomato_soup.html">Tomato soup</a></li>
-	  </ul>
+	  <header>
+	    <h1> Welcome to Odin Kitchen </h1>
+	    <h3> Simple and to the point recipes </h3>
+	  </header>
+	  <main>
+	    <div class="card">
+	      <a href="./recipes/spaghetti_e_olio.html">
+	      <img src="https://images.pexels.com/photos/11654236/pexels-photo-11654236.jpeg?cs=srgb&dl=pexels-visionartav-11654236.jpg&fm=jpg" style="width:100%;">
+	      <h4>Spaghetti e olio (Spaghetti with garlic)</h4>
+              </a>
+	    </div>
+	    <div class="card">
+	      <a href="./recipes/tomato_soup.html">
+	      <img src="https://images.pexels.com/photos/539451/pexels-photo-539451.jpeg?cs=srgb&dl=pexels-foodie-factor-539451.jpg&fm=jpg" style="width:100%;">
+	      <h4>Tomato soup</h4>
+	      </a>
+	    </div>
+	  </main>
+	  <footer>
+	    Footer of the odin kitchen webpage
+	  </footer>
 	</body>
 </html>
