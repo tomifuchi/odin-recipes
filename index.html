@@ -9,31 +9,77 @@
 	  <meta charset="utf-8">
 	  <title>Odin recipe exercise</title>
 	  <style>
+		:root{
+			/* Color palettes */
+			--white: #fffe;
+			--col1: #96CEB4;
+			--col2: #FFEEAD;
+			--col3: #D9534F;
+			--col4: #FFAD60;
+			--col5: #632626;
+		}
 	    * {
 	      box-sizing: border-box;
 	      margin: 0;
 		  padding: 0;
 	    }
-
-		main{
+		body{
+			background-color: var(--white); 
 		}
 
 	    header {
+		  background-color: var(--white);
+		  color: var(--col1);
 	      padding: 50px;
 	      text-align: center;
 	    }
 
-		.card {
+		main {
+			margin: 10px;
+			display: grid;
+			align-content: center;
+			grid-template-columns: 1fr 1fr 1fr;
+			column-gap: 10px;
+			row-gap : 10px;
+		}
+
+		.card{
+			height: auto;
+		}
+
+		.card h4{
+			padding: 10px;
 		}
 
 		.card img {
-			display: none
+			height: auto;
+			width: clamp(200px, 100%, 650px);
+		}
+
+		a {
+		  text-decoration: none;
+		  color: var(--col5)
 		}
 
 	    footer {
+		  background-color: var(--col1);
+		  color: var(--white);
 	      text-align: center;
 	      padding: 25px;
 	    }
+
+		@media screen and (max-width: 700px) {
+			main{
+				display: block;
+				margin: 0;
+			}
+			.card{
+				margin: 10px 0;
+			}
+			.card h4{
+				padding: 5px 6px;
+			}
+		}
 	  </style>
 	</head>
 	<body>
@@ -44,13 +90,13 @@
 	  <main>
 	    <div class="card">
 	      <a href="./recipes/spaghetti_e_olio.html">
-	      <img src="https://images.pexels.com/photos/11654236/pexels-photo-11654236.jpeg?cs=srgb&dl=pexels-visionartav-11654236.jpg&fm=jpg" style="width:100%;" alt="Spaghetti with garlic">
+	      <img src="https://images.pexels.com/photos/11654236/pexels-photo-11654236.jpeg?cs=srgb&dl=pexels-visionartav-11654236.jpg&fm=jpg" alt="Spaghetti with garlic">
 	      <h4>Spaghetti e olio (Spaghetti with garlic)</h4>
               </a>
 	    </div>
 	    <div class="card">
 	      <a href="./recipes/tomato_soup.html">
-	      <img src="https://images.pexels.com/photos/539451/pexels-photo-539451.jpeg?cs=srgb&dl=pexels-foodie-factor-539451.jpg&fm=jpg" style="width:100%;" alt="Tomato soup">
+	      <img src="https://images.pexels.com/photos/539451/pexels-photo-539451.jpeg?cs=srgb&dl=pexels-foodie-factor-539451.jpg&fm=jpg" alt="Tomato soup">
 	      <h4>Tomato soup</h4>
 	      </a>
 	    </div>
@@ -62,32 +108,38 @@
 		</div>
 		<div class="card">
 			<a href="./recipes/steak.html">
-				<img src="" alt="">
+	  <img src="https://images.pexels.com/photos/1352262/pexels-photo-1352262.jpeg?cs=srgb&dl=pexels-lukas-1352262.jpg&fm=jpg">
 				<h4>Steak</h4>
 			</a>
 		</div>
 		<div class="card">
 			<a href="./recipes/half_boiled_egg.html">
-				<img src="" alt="">
+	  <img src="https://images.pexels.com/photos/6294385/pexels-photo-6294385.jpeg?cs=srgb&dl=pexels-klaus-nielsen-6294385.jpg&fm=jpg">
 				<h4>Half boiled egg</h4>
 			</a>
 		</div>
 		<div class="card">
-			<a href="./recipes/pancke.html">
-				<img src="" alt="">
+			<a href="./recipes/pancake.html">
+	  <img src="https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?cs=srgb&dl=pexels-ash-376464.jpg&fm=jpg">
 				<h4>Pancake</h4>
 			</a>
 		</div>
 		<div class="card">
 			<a href="./recipes/french_onion_soup.html">
-				<img src="" alt="">
+	  <img src="https://images.pexels.com/photos/9139120/pexels-photo-9139120.jpeg?cs=srgb&dl=pexels-maria-isabelle-warren-9139120.jpg&fm=jpg">
 				<h4>French onion soup</h4>
 			</a>
 		</div>
 		<div class="card">
-			<a href="">
-				<img src="" alt="">
-				<h4>Chicken Breast with butter and Garlic</h4>
+			<a href="./recipes/cheese_cake.html">
+				<img src="https://images.pexels.com/photos/1098592/pexels-photo-1098592.jpeg?cs=srgb&dl=pexels-suzy-hazelwood-1098592.jpg&fm=jpg" alt="">
+				<h4> Cheese cake </h4>
+			</a>
+		</div>
+		<div class="card">
+			<a href="./recipes/seared_salmon.html">
+				<img src="https://images.pexels.com/photos/676560/pexels-photo-676560.jpeg?cs=srgb&dl=pexels-robert-bogdan-676560.jpg&fm=jpg" alt="">
+				<h4>Seared salmon</h4>
 			</a>
 		</div>
 	  </main>
