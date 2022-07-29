@@ -26,7 +26,7 @@
 	    }
 		body{
 			background-color: var(--white); 
-			font-family: "Source Sans Pro", sans-serif;
+			font-family: sans-serif;
 		}
 
 	    header {
@@ -34,25 +34,31 @@
 		  color: var(--col1);
 	      padding: 50px;
 	      text-align: center;
+		  box-shadow: 0 1px 3px rgba(0,0,0,.1),0 2px 2px rgba(0,0,0,.06),0 0 2px rgba(0,0,0,.07);
 	    }
 
+		header img{
+			height: auto;
+			width: clamp(300px, 100%, 25%);
+		}
+
 		main {
-			margIn: 10px auto;
-			padding: 10px;
+			margin: 10px auto;
 			/* Flex */
 			display: flex;
 			flex-flow: row wrap;
 			justify-content: center;
 			gap: 20px;
-			width: clamp(200px, 98%, 900px);
+			height: auto;
+			width: clamp(300px, 98%, 1440px);
 		}
 
 		.card{
 			border-radius: 10px;
-			transition: 0.3s;
+			transition: 0.2s;
 			box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-			width: clamp(200px, 25%, 100%);
-			flex-grow: 1;
+			width: clamp(300px,25%, 480px);
+			overflow: hidden;
 		}
 
 		.card:hover {
@@ -64,9 +70,9 @@
 			padding: 10px;
 		}
 
-		.card img {
+		.card img{
 			height: auto;
-			width: 100%;
+			max-width: 100%;
 		}
 
 		a {
@@ -85,6 +91,7 @@
 	</head>
 	<body>
 	  <header>
+		<img src="./img/logo.png" alt="">
 	    <h1> Welcome to Odin Kitchen </h1>
 	    <h3> Simple and to the point recipes </h3>
 	  </header>
